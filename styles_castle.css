@@ -1,6 +1,8 @@
-#Mainimg {
-width: 20%; 
+#Mainimg{
+  width: 700px;
 }
-#images{
-  width:25%
+
+#img1, #img2, #img3, #img4{
+  width: 500px;
+  height: 291.66px;
 }
