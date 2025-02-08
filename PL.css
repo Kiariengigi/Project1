@@ -37,4 +37,110 @@
 }
 table{
     border-spacing: 0;
+    width: 70vw;
+}
+body{
+    margin-left: 14.5vw;
+    font-family: PremierSans-Regular, Arial, Helvetica Neue, Helvetica, sans-serif;
+}
+.nextclub{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid grey;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+}
+.qual h4 {
+    
+    height: 40px;
+    border-radius: 5px;
+    padding-right: 40px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.qual{
+    display: flex;
+}
+.rel_line td{
+border-bottom: 1px solid red;
+text-align: center;
+}
+.stats td:nth-child(n+3):nth-child(-n+12){
+    text-align: center;
+}
+.stats td:first-child{
+   padding-left: 2rem;
+   width: 110px;
+   text-align: left;
+}
+.stats td{
+    border-bottom: 1px solid #f8f4f4;
+}
+.heading th{
+    background-color: #fffcfc;
+    height: 40px;
+    border-bottom: 1px solid #f0e4ec;
+    font-family: PremierSans-Heavy, Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: gray;
+}
+li{
+    list-style: none;
+    
+}
+ul{
+    gap: 10px;
+    padding-left: 0px;
+    z-index: 1;
+    justify-content: center;
+}
+.draw{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #c3b3c5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.win{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #00db74;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loss{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #e0005e;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table tr:nth-child(n+10) td:first-child{
+    padding-left: 24px;
+}
+table tr:nth-child(n+1) td:nth-child(2){
+    font-weight: 600;
+}
+table tr:nth-child(17) td:first-child{
+    padding-right: 55px;
 }
