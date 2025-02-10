@@ -3,9 +3,15 @@
     <h2>External Javascript</h2>
     <p id="demo">A Paragraph</p>
     <button type="button" onclick="myFunction()">Click Me</button>
-    <p>This example uses a full web URL to link to "myscript.js".</p>
-    <p>(myFunction is stored in "myScript.js")</p>
+    <p id = "demo"></p>
+    <p id = "demo2"></p>
 
-    <script> src="https://github.com/Kiariengigi/IST4035A/blob/main/java.js"</script>
+    <script>
+      let x;
+      x = 25; 
+      document.getElementById("demo").innerHTML = x; 
+      x=x+23
+      document.getElementById("demo2").innerHTML = x; 
+    </script>
   </body>
 </html>
