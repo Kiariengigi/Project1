@@ -1,17 +1,12 @@
 <html>
   <body>
-    <h2>External Javascript</h2>
     <p id="demo">A Paragraph</p>
     <button type="button" onclick="myFunction()">Click Me</button>
-    <p id = "demo"></p>
-    <p id = "demo2"></p>
 
     <script>
-      let x;
-      x = 25; 
-      document.getElementById("demo").innerHTML = x; 
-      x=x+23
-      document.getElementById("demo2").innerHTML = x; 
+      function myFunction(){
+        document.getElementById("demo").innerHTML = "Paragraph Changed.";
+      }
     </script>
   </body>
 </html>
