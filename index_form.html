@@ -1,1 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USIU Advanced Web Development Evaluation Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="file"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 80px;
+        }
+
+        input[type="radio"] {
+            margin-right: 8px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .checkbox-group label {
+            font-weight: normal;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>USIU Advanced Web Development Evaluation Form</h1>
+      
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" placeholder="Enter your full name" required>
+        </div>
+        
+  
+        <div class="form-group">
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" placeholder="Enter your USIU Student ID" required>
+        </div>
+        
+
+        <div class="form-group">
+            <label for="email">USIU Email Address:</label>
+            <input type="email" id="email" placeholder="Enter your USIU email" required>
+        </div>
+        
+      
+        <div class="form-group">
+            <label for="github">GitHub Profile URL:</label>
+            <input type="url" id="github" placeholder="Enter your GitHub profile URL" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phoneNumber">Local Phone Number (WhatsApp-enabled):</label>
+            <input type="text" id="phoneNumber" placeholder="+2547XX-XXX-XXX" required>
+        </div>
+        
+    
+        <div class="form-group">
+            <label for="nairobiSolution">1. Nairobi-Specific Problem Solving:</label>
+            <textarea id="nairobiSolution" placeholder="Describe your API security and scalability solution for Nairobi matatu integration"></textarea>
+        </div>
+        
+    
+        <div class="form-group">
+            <label for="jsFramework">2. Select the best JavaScript framework for real-time Nairobi news aggregation:</label>
+            <select id="jsFramework">
+                <option value="react">React.js</option>
+                <option value="vue">Vue.js</option>
+                <option value="angular">Angular</option>
+            </select>
+        </div>
+        
+  
+        <div class="form-group">
+            <label>3. Which Laravel optimization method is best for a Nairobi e-commerce startup?</label>
+            <div>
+                <input type="radio" id="databaseCaching" name="laravelOptimization" value="databaseCaching">
+                <label for="databaseCaching">Database Caching</label>
+            </div>
+            <div>
+                <input type="radio" id="queues" name="laravelOptimization" value="queues">
+                <label for="queues">Queues & Job Scheduling</label>
+            </div>
+            <div>
+                <input type="radio" id="scaling" name="laravelOptimization" value="scaling">
+                <label for="scaling">Horizontal Scaling</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label for="fileUpload">4. Upload a link to a past web project (PDF/Screenshot):</label>
+            <input type="file" id="fileUpload">
+        </div>
+        
+
+        <div class="form-group">
+            <label for="hostingProvider">5. Select a Kenyan hosting provider that supports M-Pesa payments:</label>
+            <select id="hostingProvider">
+                <option value="safaricomCloud">Safaricom Cloud</option>
+                <option value="hostPinnacle">HostPinnacle</option>
+                <option value="truehost">TrueHost</option>
+            </select>
+        </div>
+        
+    
+        <div class="form-group">
+            <label for="optimization">6. How would you optimize a web app for Nairobi users on 2G/3G networks?</label>
+            <textarea id="optimization" placeholder="Explain using PWA, lazy loading, and CDN strategies"></textarea>
+        </div>
+        
+  
+        <div class="form-group">
+            <label for="techStartups">7. Name two Kenyan tech startups actively hiring full-stack developers:</label>
+            <input type="text" id="techStartups" placeholder="Example: Cellulant, Twiga Foods">
+        </div>
+        
+    
+        <div class="form-group">
+            <label for="freelancingPlatforms">8. Name two Kenyan freelancing platforms for web developers besides Upwork/Fiverr:</label>
+            <input type="text" id="freelancingPlatforms" placeholder="Example: Kuhustle, WorkPay Africa">
+        </div>
+        
+  
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="certify" required>
+            <label for="certify">I certify that all responses are original and not AI-generated.</label>
+        </div>
+        
+        
+        <button type="submit">Submit Form</button>
+    </form>
+</body>
+</html>
 
